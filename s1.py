@@ -1,3 +1,4 @@
+import os
 class Student(object):
 	def __init__(self,name,score):
 		self.name=name
@@ -24,3 +25,10 @@ c=Dog()
 print(isinstance(a,list))
 print(isinstance(b,Animal))
 print(isinstance(c,Dog))
+
+a="\sdafsd\dfasdf防守打法\fsdf\12312\sdasf\为"
+print(repr(a))
+
+mypath = os.getcwd().replace('\\','/')
+print(mypath)
+print(os.path.exists(mypath))
